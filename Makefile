@@ -1,10 +1,9 @@
 # Makefile
 
-NDK ?= $(ANDROID_NDK_HOME)
-API ?= 21
-TRIPLE := aarch64-linux-android
+ifndef CLANG
+$(error CLANG is not defined. Pass it like: make CLANG=/path/to/clang)
+endif
 
-CLANG := $(NDK)/toolchains/llvm/prebuilt/darwin-x86_64/bin/$(TRIPLE)$(API)-clang
 
 TARGET := main
 SRC := main.c
