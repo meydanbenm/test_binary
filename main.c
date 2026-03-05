@@ -5,7 +5,7 @@
 
 int main() {
 __android_log_print(ANDROID_LOG_INFO, LOG_TAG, "HELLO WORLD sleep");
-    sleep(10);
+    sleep(20);
     __android_log_print(ANDROID_LOG_INFO, LOG_TAG, "HELLO WORLD wake up");
     return 0;
 }
